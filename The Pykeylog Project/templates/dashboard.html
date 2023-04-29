@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+      
+      #header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      #header h1 {
+        margin: 0;
+      }
+      
+      #logout-button {
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+        background-color: #fff;
+        border: none;
+        color: #333;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      #logout-button:hover {
+        background-color: #ddd;
+      }
+      
+      #main {
+        margin: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      
+      #keys-table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #keys-table td, #keys-table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #keys-table tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #keys-table tr:hover {background-color: #ddd;}
+      
+      #keys-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #333;
+        color: white;
+      }
+      
+      #logs-table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #logs-table td, #logs-table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #logs-table tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #logs-table tr:hover {background-color: #ddd;}
+      
+      #logs-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #333;
+        color: white;
+      }
+      
+      .access-denied {
+        color: red;
+        font-weight: bold;
+      }
+      
+      .blocked {
+        color: red;
+        font-weight: bold;
+      }
+      
+      .unblock-input {
+        margin-top: 20px;
+      }
+      
+      .unblock-input input[type="text"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        font-size: 16px;
+      }
+      
+      .unblock-input input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      
+      .unblock-input input[type="submit"]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>
