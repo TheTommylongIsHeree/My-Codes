@@ -13,7 +13,7 @@ while a in range (361):
     t.rt(1)
     a = a + 1
 print("The turtle has completed in drawing the circle with a radius of", radius)
-pause()
+pause("Press any key to continue")
 print("Setting up to draw the triangle. Please wait...")
 a = 1
 t.lt(30)
@@ -36,8 +36,10 @@ while b == 1:
         b = 0
 pause("PROGRAM STOPPED, PRESS ANY KEY TO EXIT")
 exit()
+time.sleep(10)
+print("10 second has passed and program has NOT stopped yet!!")
+print("Trying to taskkill python in a few seconds")
 time.sleep(5)
-print("5 second has passed and program has NOT stopped yet!!")
 plt = platform.system()
 
 if plt == "Windows":
