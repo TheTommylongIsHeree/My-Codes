@@ -30,7 +30,6 @@ while b == 1:
     t.rt(120)
     print("The turtle has complete in drawing a triangle with a of" , a,", a of the next triangle is", a + 1)
     a = a + 1
-    time.sleep(0.25)
     if a == 175 or a >> 175:
         print("The turtle has complete in drawing a filled triangle with a of" , a)
         b = 0
