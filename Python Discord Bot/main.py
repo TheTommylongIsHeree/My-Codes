@@ -75,9 +75,7 @@ async def on_message(message):
         await message.channel.send(f"{author.mention}, watch your words!")
     if number_of_bad_word_they_say[index] == 3:
         await message.channel.send(f"Hey {author.mention}! You have been warned! If you say 2 more, you will be temporarily suspended from sending messages and joining voice chat channels on this server.")
-        await message.channel.send(
-            "After you are suspended, only a moderator can help you!"
-        )
+        await message.channel.send("After you are suspended, only a moderator can help you!")
         await message.channel.send(f"{author.mention}, YOU HAVE BEEN WARNED! DON'T ASK WHY I'M EVIL WHEN IT HAPPENS!")
     if number_of_bad_word_they_say[index] == 5:
         del number_of_bad_word_they_say[index]
