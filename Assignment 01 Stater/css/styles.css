@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+}
+
+.ttcn {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.cv-document {
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 1000px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+
+    padding: 40px
+}
+
+.section-title {
+    border-bottom-width: 2.5px;
+    border-bottom-color: #737373;
+    border-bottom-style: solid;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-content {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.aboutme-title {
+    color: #0e2452;
+    font-size: 50px;
+    margin-top: 0px
+}
+
+.aboutme-main-1 { 
+    font-size: 20px;
+    
+}
+
+.aboutme-main-2 {  
+    font-weight: bold;
+    display: inline-block;
+    width: 500px;
+}
+
+.bottomborder {
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.something {
+    padding-left: 354px;
+    padding-top: 4px
+}
+
+.nopadding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+ul > li > span {
+    font-weight: 700;
+    padding-right: 5px;
+}
+.ttcn-right {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 113px;
+}
+
+.skill-rating {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.skill-name {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    width: 400px;
+}
+
+.edu-name {
+    display: inline-block; 
+    width: 200px; 
+    margin-left: 200px; 
+    font-weight: 700
+}
+
+.exp-name {
+    display: inline-block; 
+    width: 200px; 
+    margin-left: 200px; 
+    font-weight: 700
+}
+
+.act-name {
+    display: inline-block; 
+    width: 300px; 
+    margin-left: 205px; 
+    font-weight: 700
+}
+
+.cer-name {
+    display: inline-block; 
+    text-transform: uppercase
+}
+
+.mtnn {
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
