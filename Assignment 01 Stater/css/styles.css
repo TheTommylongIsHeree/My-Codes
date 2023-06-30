@@ -78,10 +78,10 @@ body {
     padding-bottom: 5px;
 }
 
-.something {
+/* .something {
     padding-left: 354px;
     padding-top: 4px
-}
+} */
 
 .nopadding {
     padding-top: 0px;
@@ -125,15 +125,10 @@ ul > li > span {
 
 .exp-name {
     display: inline-block; 
-    width: 200px; 
-    margin-left: 200px; 
     font-weight: 700
 }
 
-.act-name {
-    display: inline-block; 
-    width: 300px; 
-    margin-left: 205px; 
+.act-name { 
     font-weight: 700
 }
 
@@ -145,4 +140,16 @@ ul > li > span {
 .mtnn {
     padding-top: 20px; 
     padding-bottom: 20px;
+}
+
+.lefty {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+
+.righty {
+    display: inline-block;
+    vertical-align: top;
 }
