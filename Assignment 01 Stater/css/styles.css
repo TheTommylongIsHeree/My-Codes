@@ -35,7 +35,6 @@ body {
     box-shadow: 0 0 1px rgba(0,0,0,.5);
     background-color: #fff;
     position: relative;
-
     padding: 40px
 }
 
@@ -45,6 +44,7 @@ body {
     border-bottom-style: solid;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 20px;
 }
 
 .section-content {
@@ -55,27 +55,27 @@ body {
 
 .aboutme-title {
     color: #0e2452;
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 0px
 }
 
 .aboutme-main-1 { 
-    font-size: 20px;
+    font-size: 15px;
     
 }
 
 .aboutme-main-2 {  
     font-weight: bold;
     display: inline-block;
-    width: 500px;
+    width: 20%;
 }
 
 .bottomborder {
     border-bottom-color: #ccc;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* .something {
@@ -113,13 +113,11 @@ ul > li > span {
     display: inline-block;
     font-weight: 700;
     font-size: 18px;
-    width: 400px;
+    width: 300px;
 }
 
 .edu-name {
     display: inline-block; 
-    width: 200px; 
-    margin-left: 200px; 
     font-weight: 700
 }
 
@@ -144,7 +142,7 @@ ul > li > span {
 
 .lefty {
     display: inline-block;
-    width: 300px;
+    width: 30%;
     vertical-align: top;
 }
 
@@ -152,4 +150,9 @@ ul > li > span {
 .righty {
     display: inline-block;
     vertical-align: top;
+    width: 69%;
+}
+
+.a {
+    padding-top: 2px;
 }
