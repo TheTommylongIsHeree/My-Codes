@@ -1,4 +1,12 @@
 import discord
+    """
+    This is a Python script that creates a Discord bot using the discord.py library and Perspective API
+    to check the toxicity of messages and mute users who use toxic language.
+    
+    :param text: The `text` parameter is the message content that you want to check for toxicity. It is
+    passed to the `check_if_toxic` function to determine if the message is toxic or not
+    :return: The code is returning the toxicity score of a given text.
+    """
 from discord import app_commands
 from discord.ext import commands
 from perspective import PerspectiveAPI
@@ -21,7 +29,7 @@ def check_if_toxic(text):
     if logginglevel == "DEBUG":
         print("Toxicity score is", result["TOXICITY"])
         print("Rounded toxicity score is", toxicity_score)
-    return toxicity_score > 0.75
+    return toxicity_score > 0.25
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -45,15 +53,15 @@ async def on_ready():
 async def on_message(message):
     content = message.content
     author = message.author
-    if author in the_one_that_bad:
-        index = the_one_that_bad.index(author)
-    if author not in the_one_that_bad:
-        the_one_that_bad.append(author)
-        number_of_bad_word_they_say.append(1)
-    else:
-        number_of_bad_word_they_say[index] += 1
+    # if author in the_one_that_bad:
+    #     index = the_one_that_bad.index(author)
+    # if author not in the_one_that_bad:
+    #     the_one_that_bad.append(author)
+    #     number_of_bad_word_they_say.append(1)
+    # else:
+    #     number_of_bad_word_they_say[index] += 1
     if content == prefix + "help":
-        embed = embed = discord.Embed(title="This is what I can do:", color=discord.Color.yellow())
+        embed = discord.Embed(title="This is what I can do:", color=discord.Color.yellow())
         embed.description = "at!help - You are seeing it right now!\nat!mute (username)\nat!unmute (userid mention or mention) - Unmute the user specified"
         await message.channel.send(embed=embed)
         return
@@ -69,7 +77,6 @@ async def on_message(message):
         # Delete the user's command message
         await message.delete()
         return
-    
     if author == bot.user or message.author.bot:
         print("Message from [BOT]:", author, ":", content)
         return
@@ -78,18 +85,18 @@ async def on_message(message):
     is_toxic = check_if_toxic(content)
     if is_toxic:
         await message.channel.send(f"{author.mention}, watch your words!")
-#    if author in the_one_that_bad:
-#        if number_of_bad_word_they_say[index] == 3:
-#            await message.channel.send(f"Hey {author.mention}! You have been warned! If you say 2 more, you will be temporarily suspended from sending messages and joining voice chat channels on this server.")
-#            await message.channel.send("After you are suspended, only a moderator can help you!")
-#            await message.channel.send(f"{author.mention}, YOU HAVE BEEN WARNED! DON'T ASK WHY I'M EVIL WHEN IT HAPPENS!")
-#        if number_of_bad_word_they_say[index] == 5:
-#            del number_of_bad_word_they_say[index]
-#            del the_one_that_bad[index] 
-#            await message.channel.send(f"{author.mention}, enjoy the temporary suspension!")
-#            role = discord.utils.get(message.guild.roles, name="Member")
-#            await message.author.remove_roles(role)
-#            await message.channel.send(f"Role '{role.name}' removed from {message.author.mention}.")
+    if author in the_one_that_bad:
+        if number_of_bad_word_they_say[index] == 3:
+            await message.channel.send(f"Hey {author.mention}! You have been warned! If you say 2 more, you will be temporarily suspended from sending messages and joining voice chat channels on this server.")
+            await message.channel.send("After you are suspended, only a moderator can help you!")
+            await message.channel.send(f"{author.mention}, YOU HAVE BEEN WARNED! DON'T ASK WHY I'M EVIL WHEN IT HAPPENS!")
+        if number_of_bad_word_they_say[index] == 5:
+            del number_of_bad_word_they_say[index]
+            del the_one_that_bad[index] 
+            await message.channel.send(f"{author.mention}, enjoy the temporary suspension!")
+            role = discord.utils.get(message.guild.roles, name="Member")
+            await message.author.remove_roles(role)
+            await message.channel.send(f"Role '{role.name}' removed from {message.author.mention}.")
 
     await bot.process_commands(message)
 
