@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+.bg-moregrey {
+    background: #cccccc;
+}
+
+section > .container{
+    width: 1170px;
+    margin: auto;
+    display: block;
+    padding: 30px 50px;
+}
+
+#nav-bar {
+    text-align: center;
+}
+
+
+.banner-img {
+    width: 100%
+}
+
+
+#everything-in-banner {
+    position: relative;
+}
+#banner {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    font-size: 20px;
+}
+
+
+
+.banner-blur {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #11111170;
+    z-index: 1;
+}
+
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-grid-item {
+    background-color: #F0F0F0;
+}
+
+.top-align {
+    vertical-align: top;
+}
+
+.fix-1 {
+    background-color: #F5F5F5;
+}
+
+.banner-subtitle {
+    font-size: 12px;
+}
+
+.navbar-button {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: uppercase;
+}
+
+.navbar-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-title {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.navbar-button > a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-button > i {
+    color: #1f98ff;
+}
+
+#target {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#personal-info {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.about-title {
+    padding-bottom: 20px;
+}
+
+.about-icons {
+    padding-top: 30px;
+}
+
+.info-grid-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    justify-items: center;
+}
+
+.info-grid-item {
+    display: grid !important;
+    /* yes, again (why tho) */
+    grid-template-rows: 10% auto;
+    grid-template-columns: 75% 25%;
+    box-shadow: 1px 1px lightblue, -1px -1px lightblue, -1px 1px lightblue, 1px -1px lightblue;
+    margin-top: 20px;
+    width: 300px;
+    height: 500px;
+}
+
+.info-grid-item > i {
+    font-size: 250%;
+    justify-content: stretch;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.info-grid-item > h1 {
+    font-size: 175%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.info-grid-content-item {
+    grid-column: 1 / span 2;
+}
+
+.dot-1 {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    border-radius: 100%;
+    display: inline-block;
+}
