@@ -45,13 +45,6 @@ async def on_ready():
 async def on_message(message):
     content = message.content
     author = message.author
-    # if author in the_one_that_bad:
-    #     index = the_one_that_bad.index(author)
-    # if author not in the_one_that_bad:
-    #     the_one_that_bad.append(author)
-    #     number_of_bad_word_they_say.append(1)
-    # else:
-    #     number_of_bad_word_they_say[index] += 1
     if content == prefix + "help":
         embed = discord.Embed(title="This is what I can do:", color=discord.Color.yellow())
         embed.description = "at!help - You are seeing it right now!\nat!mute (username)\nat!unmute (userid mention or mention) - Unmute the user specified"
@@ -77,6 +70,15 @@ async def on_message(message):
     is_toxic = check_if_toxic(content)
     if is_toxic:
         await message.channel.send(f"{author.mention}, watch your words!")
+
+        if author in the_one_that_bad:
+        index = the_one_that_bad.index(author)
+    if author not in the_one_that_bad:
+        the_one_that_bad.append(author)
+        number_of_bad_word_they_say.append(1)
+    else:
+        number_of_bad_word_they_say[index] += 1
+
     if author in the_one_that_bad:
         if number_of_bad_word_they_say[index] == 3:
             await message.channel.send(f"Hey {author.mention}! You have been warned! If you say 2 more, you will be temporarily suspended from sending messages and joining voice chat channels on this server.")
