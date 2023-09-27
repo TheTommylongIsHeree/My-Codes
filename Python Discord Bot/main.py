@@ -1,12 +1,4 @@
 import discord
-    """
-    This is a Python script that creates a Discord bot using the discord.py library and Perspective API
-    to check the toxicity of messages and mute users who use toxic language.
-    
-    :param text: The `text` parameter is the message content that you want to check for toxicity. It is
-    passed to the `check_if_toxic` function to determine if the message is toxic or not
-    :return: The code is returning the toxicity score of a given text.
-    """
 from discord import app_commands
 from discord.ext import commands
 from perspective import PerspectiveAPI
