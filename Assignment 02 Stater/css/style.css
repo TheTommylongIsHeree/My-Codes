@@ -160,3 +160,34 @@ section > .container{
 .info-grid-content-item {
     grid-column: 1 / span 2;
 }
+
+.dot-1 {
+    position: absolute;
+    left: -10px;
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+    top: 3px;
+}
+
+.dot-container {
+    position: relative;
+}
+
+.inlineblockclass {
+    display: inline-block !important;
+    margin-top: 10px;
+}
+
+.bluebg {
+    border-radius: 20px;
+    background-color: #0088ff;
+    border-color: #0088ff;
+    padding: 3px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
