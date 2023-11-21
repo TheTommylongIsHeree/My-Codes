@@ -12,7 +12,7 @@ while True:
         print("Invalid number!")
 characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
 
-for i in range 100:
+for i in range(100):
 	word = list(characters)
 	random.shuffle(word)
 print(word)
