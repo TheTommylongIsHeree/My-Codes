@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 * {
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .bg-grey {
@@ -13,7 +15,7 @@
 }
 
 section > .container{
-    width: 1170px;
+    width: 100%;
     margin: auto;
     display: block;
     padding: 30px 50px;
@@ -161,14 +163,26 @@ section > .container{
     grid-column: 1 / span 2;
 }
 
-.dot-1 {
+.jobs-dot-2 {
     position: absolute;
-    left: -10px;
-    width: 5px;
-    height: 5px;
-    background: black;
+    left: -5px;
+    width: 7px;
+    height: 7px;
+    background: #199CDB;
     border-radius: 50%;
     top: 3px;
+    z-index: 1;
+}
+
+.jobs-dot-1 {
+    position: absolute;
+    left: -5px;
+    width: 7px;
+    height: 7px;
+    background: #199CDB;
+    border-radius: 50%;
+    top: 200px;
+    z-index: 1;
 }
 
 .dot-container {
@@ -177,17 +191,93 @@ section > .container{
 
 .inlineblockclass {
     display: inline-block !important;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .bluebg {
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #0088ff;
     border-color: #0088ff;
-    padding: 3px 5px;
+    padding: 3px 10px;
+    color: #fff;
 }
 
 a {
     text-decoration: none;
     color: #000;
+}
+
+.job-text {
+    padding: 20px !important;
+}
+
+.learnings-spacing {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.learnings-dot-2 {
+    position: absolute;
+    left: 18px;
+    width: 7px;
+    height: 7px;
+    background: #199CDB;
+    border-radius: 50%;
+    top: 156px;
+    z-index: 1;
+}
+
+.learnings-dot-1 {
+    position: absolute;
+    left: 18px;
+    width: 7px;
+    height: 7px;
+    background: #199CDB;
+    border-radius: 50%;
+    top: 18px;
+    z-index: 1;
+}
+
+.activity-dot-2 {
+    position: absolute;
+    left: 18px;
+    width: 7px;
+    height: 7px;
+    background: #199CDB;
+    border-radius: 50%;
+    top: 156px;
+    z-index: 1;
+}
+
+.activity-dot-1 {
+    position: absolute;
+    left: 18px;
+    width: 7px;
+    height: 7px;
+    background: #199CDB;
+    border-radius: 50%;
+    top: 18px;
+    z-index: 1;
+}
+
+.line {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+.circle-container {
+    display: grid !important;
+    grid-column: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+.circle-border-outside {
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
 }
