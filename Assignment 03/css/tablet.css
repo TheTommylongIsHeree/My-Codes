@@ -1,0 +1,12 @@
+@media (max-width: 1024px) {
+ .navbar-title {
+  display: none !important;
+ }
+ .banner-img {
+  width: 100%;
+  }
+ .info-grid-container {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  }
+}

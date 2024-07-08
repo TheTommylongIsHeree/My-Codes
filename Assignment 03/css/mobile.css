@@ -1,0 +1,43 @@
+@media (max-width: 425px) {
+.navbar-container {
+ display: inline !important;
+ }
+ .about-grid-container {
+ display: inline !important;
+ }
+ .info-grid-container {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+  column-gap: 20px;
+  justify-items: center;
+  padding-bottom: 50px;
+  }
+  .certificate-wmaincontainer {
+  display: block !important;
+  border-bottom: 0px;
+  }
+  .certificate-maincontainer {
+  display: block !important;
+  }
+  .certificate-container {
+  display: block !important;
+  width: auto;
+  border-bottom: 2px solid #d6c08d;
+  margin-bottom: 3px;
+  }
+  .left-cert {
+  border-right: 0px;
+  }
+  .project-container-main {
+  grid-template-columns: 1fr;
+  }
+  .banner-title {
+   font-size: 90%; 
+  }
+  .banner-subtitle {
+    font-size: 18px; 
+   }
+  .certificate-image {
+    width: 100%
+  }  
+}
